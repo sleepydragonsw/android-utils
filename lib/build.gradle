@@ -1,27 +1,2 @@
 apply plugin: "com.android.library"
-apply plugin: "kotlin-android"
-
-android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.0"
-
-    defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0.0-dev"
-    }
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
-    }
-
-    dexOptions {
-        javaMaxHeapSize "3g"
-    }
-}
-
-dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}"
-}
+apply from: rootProject.file("common.gradle")
