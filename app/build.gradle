@@ -35,9 +35,9 @@ android {
 }
 
 dependencies {
-    compile project(":lib")
+    implementation project(":lib")
 
-    compile "com.android.support:design:${versions.androidSupport}"
-    compile "com.android.support:appcompat-v7:${versions.androidSupport}"
-    compile "com.android.support.constraint:constraint-layout:${versions.constraintLayout}"
+    implementation "com.android.support:design:${versions.androidSupport}"
+    implementation "com.android.support:appcompat-v7:${versions.androidSupport}"
+    implementation "com.android.support.constraint:constraint-layout:${versions.constraintLayout}"
 }
