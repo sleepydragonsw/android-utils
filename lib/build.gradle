@@ -1,2 +1,8 @@
 apply plugin: "com.android.library"
 apply from: rootProject.file("common.gradle")
+
+dependencies {
+    testCompile "junit:junit:${versions.junit}"
+    testCompile "org.mockito:mockito-core:${versions.mockito}"
+    testCompile "org.jetbrains.kotlin:kotlin-test-junit:${versions.kotlin}"
+}
