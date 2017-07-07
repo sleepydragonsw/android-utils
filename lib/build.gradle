@@ -1,7 +1,16 @@
 apply plugin: "com.android.library"
 apply from: rootProject.file("common.gradle")
 
+android {
+    defaultConfig {
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+}
+
 dependencies {
+    androidTestCompile "com.android.support.test:runner:${versions.androidTestSupport}"
+    androidTestCompile "org.jetbrains.kotlin:kotlin-test-junit:${versions.kotlin}"
+
     testCompile "junit:junit:${versions.junit}"
     testCompile "org.mockito:mockito-core:${versions.mockito}"
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:${versions.kotlin}"

@@ -3,6 +3,7 @@ buildscript {
         androidGradlePlugin: "3.0.0-alpha5",
         kotlin: "1.1.3-2",
         androidSupport: "26.0.0-beta2",
+        androidTestSupport: "0.5",
         constraintLayout: "1.1.0-beta1",
         junit: "4.12",
         mockito: "2.8.47",
